@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right top, #24242473, #24242473),
+    url("../img/bg-register.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0 3rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  background-color: rgb(42, 42, 42);
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 40px 3.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  form {
+    font-size: 1.2rem;
+    width: 100%;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    input:not(.form-check-input),
+    select {
+      width: 100%;
+      height: 40px;
+      border-radius: 20px;
+      border: 2px solid #9f3647;
+      background-color: #333333;
+      outline: none;
+
+      box-shadow: none;
+      color: #fff;
+      &::placeholder {
+        color: #777;
+        font-size: 1.2rem;
+      }
+    }
+
+    .form-check-input:checked {
+      border: 1px solid #9f3647;
+      box-shadow: 2px 2px 2px #9f3647;
+      background-color: #9f3647;
+    }
+    .form-check-label {
+      font-size: 0.8rem;
+    }
+    button {
+      background-color: #9f3647;
+      width: 100%;
+      height: 3.5rem;
+      border: none;
+      &:hover {
+        background-color: #9f3647;
+        filter: brightness(1.2);
+      }
+    }
+    .help {
+      margin-top: 40px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #787878;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .form-container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+  .form-container {
+    width: 70%;
+    form {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+}
