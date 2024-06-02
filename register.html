@@ -12,9 +12,7 @@
       type="image/x-icon"
     />
     <title>Hamburgueseria - Las Delicias</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,9 +20,111 @@
       rel="stylesheet"
     />
     <script
-    src="https://kit.fontawesome.com/f7fb471b65.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/f7fb471b65.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        background: #050505;
+        color: #fff;
+        padding: 10px 20px;
+      }
+      .nav-links {
+        list-style: none;
+        padding: 0;
+      }
+      .nav-links li {
+        display: inline;
+        margin-right: 20px;
+      }
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+      }
+      #btn_flotante {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: #ff5722;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+      }
+      #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f5f5f5;
+      }
+      .form-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+      .form-container h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .form-container .form-control {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-container .form-check-label {
+        margin-left: 5px;
+      }
+      .form-container .btn {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .form-container .btn:hover {
+        background: #0056b3;
+      }
+      .form-container .help {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+      }
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+      footer a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      @media (max-width: 600px) {
+        .form-container {
+          padding: 10px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -35,11 +135,9 @@
             <span class="logo-text">Hamburguesas - Las Delicias</span>
           </a>
         </div>
-        
         <ul class="nav-links">
           <li><a href="./index.html#popular">Hamburguesas</a></li>
           <li><a href="./index.html#contacto">Consultas</a></li>
-
           <li><a href="./register.html">Registrarse</a></li>
           <li>
             <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
@@ -56,53 +154,47 @@
         </ul>
       </nav>
     </header>
-    <a id="btn_flotante" href="index.html"
-      >PEDÍ<br />AHORA</a
-    >
+    <a id="btn_flotante" href="index.html">PEDÍ<br />AHORA</a>
     <main>
       <section id="banner" class="d-flex">
-        <class="main">
-        <div class="form-container" data-aos="zoom-in" data-aos-duration="1000">
-          <form>
-            <h2>Registro</h2>
-            <div class="mb-3">
+        <div class="main">
+          <div
+            class="form-container"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <form>
+              <h2>Registro</h2>
               <input
                 type="text"
-                class="form-control px-3"
+                class="form-control"
                 required
                 placeholder="Nombre"
+                name="nombre"
               />
-            </div>
-            <div class="mb-3">
               <input
                 type="text"
-                class="form-control px-3"
+                class="form-control"
                 required
                 placeholder="Apellido"
+                name="apellido"
               />
-            </div>
-            <div class="mb-3">
               <input
                 type="email"
-                class="form-control px-3"
+                class="form-control"
                 required
                 placeholder="Email"
+                name="email"
               />
-            </div>
-            <div class="mb-3">
               <input
                 type="password"
-                class="form-control px-3"
+                class="form-control"
                 required
                 placeholder="Contraseña"
+                name="password"
               />
-            </div>
-            <div class="mb-3">
-              <input type="date" class="px-3" required />
-            </div>
-
-            <div class="mb-3">
-              <select name="country" class="px-3" required>
+              <input type="date" class="form-control" required name="fecha" />
+              <select name="country" class="form-control" required>
                 <option value="">País</option>
                 <option value="AR">Argentina</option>
                 <option value="BO">Bolivia</option>
@@ -115,35 +207,36 @@
                 <option value="UY">Uruguay</option>
                 <option value="VE">Venezuela</option>
               </select>
-            </div>
-
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" required />
-              <label class="form-check-label" for="exampleCheck1"
-                >Acepto términos y condiciones</label
-              >
-            </div>
-            <button type="submit" class="btn btn-primary">Registrarse</button>
-            <div>
-              <a class="help" href="#">¿Necesitás ayuda?</a>
-            </div>
-          </form>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="termsCheck"
+                  required
+                />
+                <label class="form-check-label" for="termsCheck"
+                  >Acepto términos y condiciones</label
+                >
+              </div>
+              <button type="submit" class="btn">Registrarse</button>
+              <div>
+                <a class="help" href="#">¿Necesitás ayuda?</a>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
     </main>
     <footer id="footer">
       <a href="">Términos y condiciones</a>
       <a href="">Preguntas Frecuentes</a>
       <a href="">Ayuda</a>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        AOS.init();
+      });
+    </script>
   </body>
 </html>
