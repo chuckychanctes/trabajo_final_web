@@ -1,0 +1,384 @@
+@media only screen and (min-width:1280px) {
+  #imgPal {
+    width: 100%;
+    height: 880px;
+    background: url(../img/fondo1920x1080.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  #hamburguesas .entrana {
+    width: 50%;
+  }
+
+  #hamburguesas .contenedor_hamburguesas {
+    width: 70%;
+  }
+
+  #hamburguesas .contenedor_hamburguesas .burger {
+    width: 20%;
+  }
+
+  #extras .contenedor_extras {
+    width: 70%;
+  }
+
+  #extras .contenedor_extras .extra {
+    width: 33.33333333333333%;
+  }
+
+  #ensaladas .contenedor_ensaladas {
+    width: 70%;
+  }
+
+  #ensaladas .contenedor_ensaladas .ensalada {
+    width: 30%;
+  }
+
+  #sucursales .contenedor_sucursales {
+    width: 70%;
+  }
+
+  #sucursales .contenedor_sucursales .local_cont {
+    width: 16.666666%;
+    margin: 0 0 50px 0;
+  }
+
+  #bebidas .contenedor_bebidasDT {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  #denirocafe {
+    background-size: 110%;
+  }
+
+  footer .contenedor_footer {
+    width: 100%;
+  }
+
+  footer .contenedor_footer .institucional {
+    width: 100%;
+    float: none;
+  }
+
+  footer .contenedor_footer .trabajaConNos {
+    width: 100%;
+    float: none;
+    padding: 30px 0 30px;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  #imgPal {
+    width: 100%;
+    height: 720px;
+    background: url(../img/fondo1024x720.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  #hamburguesas .contenedor_hamburguesas {
+    width: 90%;
+  }
+
+  #extras {
+    padding: 50px 0 50px;
+  }
+
+  #extras .contenedor_extras {
+    width: 90%;
+  }
+
+  #ensaladas {
+    padding: 50px 0 50px;
+  }
+
+  #ensaladas .contenedor_ensaladas {
+    width: 90%;
+  }
+
+  #aderezos{
+    padding: 20px 0 50px;
+  }
+
+  #aderezos .contenedor_aderezos {
+    width: 90%;
+  }
+
+  #aderezos .contenedor_aderezos .aderezo {
+    width: 25%;
+  }
+
+  #bebidas .contenedor_bebidasDT {
+    width: 90%;
+  }
+
+  #sucursales .contenedor_sucursales {
+    width: 80%;
+  }
+
+  #sucursales .contenedor_sucursales .local_cont {
+    width: 25%;
+  }
+
+  #bebidas {
+    position: relative;
+    background: url(../img/parallax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: none;
+  }
+
+  #bebidas h1 {
+    font-size: 250%;
+    letter-spacing: 1px;
+  }
+
+  #bebidas .contenedor_bebidasDT {
+    display: none;
+  }
+
+  #bebidas .contenedor_bebidasMOB {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #bebidas .contenedor_bebidasMOB a {
+    width: 20%;
+    padding: 10px;
+  }
+
+  #bebidas .contenedor_bebidasMOB a img {
+    width: 100%;
+  }
+
+  #denirocafe {
+    background-size: 130%;
+  }
+
+  #merchandising .contenedor_merchandising {
+    width: 90%;
+  }
+
+  #merchandising .contenedor_merchandising .contactoMerchan {
+    font-size: 80%;
+  }
+
+  #franquicias a {
+    font-size: 90%;
+  }
+
+  #eventos {
+    width: 90%;
+  }
+
+  #franquicias {
+    width: 90%;
+  }
+
+  #gracias .gracias_gracias {
+    width: 100%;
+  }
+
+  #gracias .gracias_gracias img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:920px) {
+  #imgPal {
+    width: 100%;
+    height: 620px;
+    background: url(../img/fondo920x620.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  #hamburguesas .btn_carta a {
+    font-size: 180%;
+  }
+
+  #extras .contenedor_extras .extra {
+    width: 50%;
+  }
+
+  #ensaladas .contenedor_ensaladas .ensalada {
+    width: 50%;
+  }
+
+  #sucursales .contenedor_sucursales {
+    width: 80%;
+  }
+
+  #sucursales .contenedor_sucursales .local_cont {
+    width: 33.333333%;
+  }
+
+  #sucursales .contenedor_sucursales .local h2 {
+    font-size: 120%;
+  }
+
+  #bebidas .contenedor_bebidasMOB a {
+    width: 33.33333333%;
+    padding: 10px;
+  }
+
+  #denirocafe {
+    background-size: 140%;
+  }
+
+  #merchandising .contenedor_merchandising {
+    width: 90%;
+  }
+
+  #eventos {
+    width: 70%;
+    padding: 30px 0;
+  }
+
+  #eventos .eventos_txt {
+    text-align: center;
+    margin: auto;
+    float: none;
+  }
+
+  #eventos img {
+    width: 50%;
+    margin: 30px auto 0;
+    float: none;
+  }
+
+  #franquicias p {
+    width: 80%;
+  }
+
+  #contacto {
+    width: 100%;
+  }
+
+  #contacto .contenedor_contacto form {
+    width: 80%;
+    margin: auto;
+  }
+
+  #gracias .gracias_gracias img {
+    width: 140%;
+  }
+}
+
+@media only screen and (max-width:770px) {
+  p {
+    font-size: 80%;
+    line-height: 100%;
+  }
+
+  #hamburguesas .entrana {
+    width: 60%;
+  }
+
+  #hamburguesas .contenedor_hamburguesas {
+    width: 90%;
+  }
+
+  #extras .contenedor_extras {
+    width: 90%;
+  }
+
+  #ensaladas .contenedor_ensaladas {
+    width: 90%;
+  }
+
+  #aderezos .contenedor_aderezos .aderezo {
+    width: 33.33333333333333%;
+  }
+
+  #aderezos .contenedor_aderezos .aderezos_refs .ad_refe {
+    width: 33.33333333333333%;
+    padding: 20px;
+  }
+
+  #sucursales .tituloSucursales {
+    width: 80%;
+  }
+
+  #sucursales .contenedor_sucursales .local_cont {
+    width: 50%;
+  }
+
+  #sucursales .contenedor_sucursales .SucVaca {
+    width: 90%;
+  }
+
+  #denirocafe {
+    background-size: 200%;
+  }
+
+  #denirocafe .contenedor_cafe .local_cafe {
+    width: 51%;
+    margin-bottom: 20px;
+  }
+
+  #merchandising .contenedor_merchandising .contactoMerchan a {
+    font-size: 70%;
+  }
+
+  #eventos .eventos_txt {
+    width: 90%;
+  }
+
+  #eventos .eventos_txt a {
+    font-size: 90%;
+  }
+
+  #contacto .contenedor_contacto form {
+    width: 90%;
+  }
+
+  #secFranquicias .franq_iconos .franq_icon {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  #secFranquicias .franq_iconos .franq_icon img {
+    width: 80%;
+    padding: 30px 0 0;
+  }
+
+  #secFranquicias .franq_iconos .franq_icon p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  #imgPal {
+    width: 100%;
+    height: 500px;
+    background: url(../img/fondo480x500.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  #hamburguesas .entrana {
+    width: 70%;
+  }
+
+  #hamburguesas .contenedor_hamburguesas .burger {
+    width: 50%;
+  }
+
+  #sucursales .tituloSucursales {
+    width: 80%;
+  }
+
+  #eventos {
+    width: 80%;
+    padding: 20px 0;
+  }
+}

@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- vinculación con estilos y favicon -->
+
     <link rel="stylesheet" href="./static/css/style.css" />
     <link rel="stylesheet" href="./static/css/css.css" />
     <link rel="stylesheet" href="./static/css/menus.css" />
+    <!-- <link rel="stylesheet" href="./static/css/mediaquery.css" />-->
+
+    <!-- <link rel="stylesheet" href="./static/css/normalize.css" />
+    <link rel="stylesheet" href="./static/css/normalize.min.css" /> -->
     <link
       rel="shortcut icon"
       href="./static/img/burger2.ico"
       type="image/x-icon"
     />
     <title>Hamburgueseria - Las Delicias</title>
+    <!-- vinculación con google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
+    <!-- vinculación fontawesome -->
     <script
       src="https://kit.fontawesome.com/f7fb471b65.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
+    <!-- Encabezado -->
+
+    <!-- ----------------------------------------------- -->
     <header class="header">
       <nav>
+        <!-- Logo -->
         <div id="logo">
           <a href="/">
+            <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+            <!-- <i class="fas fa-film"></i> -->
             <i class="fas fa-hamburger"></i>
+            <!-- <i class="fas fa-film"></i> -->
             <span class="logo-text">Hamburguesas - Las Delicias</span>
           </a>
         </div>
+        <!--Boton Flotante-->
+        <a
+          id="btn_flotante"
+          href="https://pedidos.masdelivery.com/deniro-hamburgueseria"
+          target="_blank"
+          >PEDÍ<br />AHORA</a
+        >
 
+        <!-- hipervínculos del menú -->
         <ul class="nav-links">
           <li><a href="#popular">Hamburguesas</a></li>
-          <li><a href="#contacto">Consultas</a></li>
-          <li><a href="./register.html">Registrarse</a></li>
-          <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <li>
+            <a href="#contacto">Consultas</a>
+          </li>
+          <li>
+            <a href="./register.html">Registrarse</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
           </li>
           <li>
             <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
           </li>
           <li>
-            <a href="./pages/login.html">
+            <a href="#">
+              <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+              <!-- <i class="fas fa-sign-in-alt"></i> -->
               <i class="fas fa-sign-in-alt"></i>
               <span class="login-text">Iniciar Sesión</span>
             </a>
@@ -51,10 +85,20 @@
         </ul>
       </nav>
     </header>
-    <a id="btn_flotante" href="./index.html"
+    <!--Boton Flotante-->
+    <a
+      id="btn_flotante"
+      href="https://pedidos.masdelivery.com/deniro-hamburgueseria"
+      target="_blank"
       >PEDÍ<br />AHORA</a
     >
+
+    <!-- Contenido -->
     <main>
+      <!-- banner: una sección prominente en la 
+            parte superior de una página que puede
+            contener información destacada, como anuncios,
+            mensajes importantes, o un diseño gráfico distintivo. -->
       <section id="banner" class="d-flex">
         <div class="card-banner container">
           <h1>Hamburguesas, las que te imagines...</h1>
@@ -62,6 +106,11 @@
           <a href="./register.html" class="btn-cac">Registrate</a>
         </div>
       </section>
+
+      <!-- search: sección que contiene un mensaje de búsqueda
+            y un campo de entrada de texto para que los usuarios
+            ingresen lo que desean buscar en un sitio web
+              -->
       <section id="search" class="container">
         <div class="veganas">
           <i class="fas fa-seedling"></i>
@@ -71,17 +120,28 @@
           </p>
         </div>
       </section>
+
+      <!-- popular: mostrar imágenes de las peliculas
+            con tendencia hoy -->
       <section id="popular">
+        <!-- División contenedora del titulo
+                e imagenes -->
         <div class="container" class="movies-grid">
           <h2>Las tendencias de hoy</h2>
+          <!-- Div para mostrar todas las imagenes e info 
+                    de las películas -->
           <div id="list-popular">
+            <!-- División que mostrará imagen y detalle de la pelicula, mismo 
+                    formato para todas las peliculas -->
+            <!-- hamburguesa 01 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_caprichosa.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">CAPRICHOSA</p>
                   <br />
@@ -92,13 +152,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- hamburguesa 02 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_biencheta.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">BIEN CHETA</p>
                   <br />
@@ -109,13 +172,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- pelicula 03 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_bigdeniro.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">GRAN DELICIA</p>
                   <br />
@@ -126,13 +192,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- pelicula 04 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_costanera.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">COSTANERA</p>
                   <br />
@@ -143,13 +212,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- pelicula 05 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_cuzcoHatuchay.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">LAGABY</p>
                   <p class="movie-item-detail-subtitle">
@@ -159,13 +231,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- pelicula 06 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_parrillera.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">PARRILLERA</p>
                   <br />
@@ -176,13 +251,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- pelicula 07 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_tareaFina.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">CHUCKY</p>
                   <br />
@@ -193,13 +271,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- pelicula 08 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_gringa.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">LAUTI-SNIPER</p>
                   <p class="movie-item-detail-subtitle">
@@ -208,13 +289,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- pelicula 09 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_donaTota.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">DOÑA LULI</p>
                   <p class="movie-item-detail-subtitle">
@@ -224,13 +308,16 @@
                 </div>
               </a>
             </div>
+
+            <!-- pelicula 10 -->
             <div class="movie-item">
-              <a href="#popular">
+              <a href="./templates/detail-movie.html">
                 <img
                   src="./static/img/icon_delBosque.png"
                   alt=""
                   class="movie-item-img"
                 />
+
                 <div class="movie-item-detail">
                   <p class="movie-item-detail-title">MANCHITA</p>
                   <p class="movie-item-detail-subtitle">
@@ -243,16 +330,21 @@
           </div>
         </div>
       </section>
+
+      <!-- top-rated: mostrar las películas más aclamadas-->
       <section id="top-rated">
+        <!-- División contenedora del titulo
+                e imagenes -->
         <div class="container">
           <div id="contacto">
+            <!--<img class="rotoMerchanAbajo" src="img/rotoMerchanAbajo.png" alt="Deniro hambuerguesería">-->
             <div class="contenedor_contacto">
               <div class="tituloContacto">
                 <h1>DEJANOS TU CONSULTA O SUGERENCIA</h1>
               </div>
               <form
                 method="post"
-                action="#"
+                action="https://www.denirohamburgueseria.com.ar/enviar.php"
               >
                 <ul>
                   <li>
@@ -299,6 +391,7 @@
         </div>
       </section>
     </main>
+
     <footer id="footer">
       <a href="">Términos y condiciones</a>
       <a href="">Preguntas Frecuentes</a>

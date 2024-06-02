@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Fredoka One", cursive;
+  background-color: #e9d431;
+}
+
+#contacto {
+  width: 100%;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+#contacto .contenedor_contacto {
+  width: 70%;
+  max-width: 600px;
+  margin: auto;
+}
+
+#contacto .contenedor_contacto form {
+  width: 100%;
+  margin: 50px 0 0 0;
+}
+
+#contacto .contenedor_contacto form ul {
+  width: 100%;
+  list-style: none;
+  text-align: left;
+}
+
+#contacto .contenedor_contacto form ul li {
+  margin: 0 0 25px;
+}
+
+#contacto .contenedor_contacto form ul li label {
+  font-size: 140%;
+}
+
+#contacto .contenedor_contacto form ul li input[type="text"] {
+  width: 100%;
+}
+
+#contacto .contenedor_contacto form ul li input[type="checkbox"] {
+  margin: 14px 5px 0 0;
+}
+
+#contacto .contenedor_contacto form ul li input {
+  margin: 7px 0;
+  padding: 7px 0 7px;
+  font-family: "Oswald", sans-serif;
+  font-size: 120%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  webkit-box-sizing: border-box;
+  moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#contacto .contenedor_contacto form ul li textarea {
+  width: 100%;
+  margin: 7px 0;
+  padding: 7px 0 7px;
+  font-family: "Oswald", sans-serif;
+  font-size: 120%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  webkit-box-sizing: border-box;
+  moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#contacto .contenedor_contacto form ul li input:focus {
+  outline: none !important;
+}
+
+#contacto .contenedor_contacto form ul li input:active {
+  outline: none !important;
+}
+
+#contacto .contenedor_contacto form ul li textarea:focus {
+  outline: none !important;
+}
+
+#contacto .contenedor_contacto form ul li textarea:active {
+  outline: none !important;
+}
+
+#contacto .contenedor_contacto form ul li span {
+  font-size: 120%;
+}
+
+#contacto .contenedor_contacto form textarea {
+}
+
+#contacto .contenedor_contacto form ul li button {
+  margin-top: 20px;
+  padding: 10px 30px 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 120%;
+  color: #e9d431;
+  background: #4a4311;
+  border: none;
+  box-shadow: 0 8px 0 -5px #fff;
+  transition: 400ms;
+  float: right;
+}
+
+#contacto .contenedor_contacto form ul li button:hover {
+  background: #000;
+  box-shadow: 0 0 0 #fff;
+  transition: 400ms;
+}
+
+/*
+  #contacto .contenedor_contacto form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0 10px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 120%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    webkit-box-sizing: border-box;
+    moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  #contacto .contenedor_contacto form button {
+    padding: 10px 30px 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 120%;
+    color: #E9D431;
+    background: #4a4311;
+    border: none;
+    box-shadow: 0 8px 0 -5px #FFF;
+    transition: 400ms;
+    float: right;
+  }
+  
+  #contacto .contenedor_contacto form button
+  */
+
+/*Botón Flotante*/
+#btn_flotante {
+  display: scroll;
+  position: fixed;
+  bottom: 10%;
+  right: 0px;
+  z-index: 999999;
+
+  background: #e9d431;
+  color: #000000;
+  font-size: 30px;
+  line-height: 27px;
+  font-weight: bolder;
+  border-radius: 15px 0 0 15px;
+  padding: 20px 40px 20px 25px;
+  box-shadow: 5px 5px 10px rgb(71, 71, 71, 0.5);
+}

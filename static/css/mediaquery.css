@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1280px) {
+  #imgPal {
+    height: 600px;
+    background-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #hamburguesas .contenedor_hamburguesas .burger {
+    width: 50%;
+  }
+
+  #extras .contenedor_extras .extra,
+  #ensaladas .contenedor_ensaladas .ensalada,
+  #aderezos .contenedor_aderezos .aderezo,
+  #sucursales .contenedor_sucursales .local_cont {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hamburguesas .contenedor_hamburguesas .burger {
+    width: 100%;
+  }
+
+  #extras .contenedor_extras .extra,
+  #ensaladas .contenedor_ensaladas .ensalada,
+  #aderezos .contenedor_aderezos .aderezo,
+  #sucursales .contenedor_sucursales .local_cont {
+    width: 100%;
+  }
+}

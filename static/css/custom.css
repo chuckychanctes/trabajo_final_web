@@ -1,0 +1,41 @@
+/* Fondo negro para el encabezado */
+.header {
+  background-color: black;
+}
+
+/* Estilos para las imágenes dentro de la sección popular */
+.movie-item {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.movie-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-item-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-item-detail {
+  text-align: center;
+  padding: 10px;
+}
+
+.movie-item-detail-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.movie-item-detail-subtitle {
+  font-size: 1em;
+  color: #555;
+}
